@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DuctLine | Landing pages for HVAC companies</title>
-  <meta name="description" content="Don't pay for clicks your website can't close. A simple landing page built only for HVAC companies. $300 flat, no contracts.">
+  <title>DuctLine | Landing pages for HVAC businesses</title>
+  <meta name="description" content="Simple, fast HVAC landing pages that make it easier for customers to call and request service. $300 flat. One focused page. No long-term commitment.">
   <meta name="theme-color" content="#121A21">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,47 +21,40 @@
   <div class="wrap nav__in">
     <a class="logo" href="#top" aria-label="DuctLine, back to top"><img src="assets/logo.png" alt="DuctLine" width="1163" height="250"></a>
     <nav class="nav__links" aria-label="Primary">
-      <a href="#problem">The problem</a>
-      <a href="#fixes">What we fix</a>
+      <a href="#problem">The Problem</a>
+      <a href="#included">What's Included</a>
       <a href="#pricing">Pricing</a>
-      <a href="#process">How it works</a>
+      <a href="#process">How It Works</a>
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav__cta">
-      <a class="btn btn--sm" href="#audit">Free check</a>
+      <a class="btn btn--sm" href="#audit"><span class="long">Get My Free Website Check</span><span class="short">Free Check</span></a>
     </div>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- ============ HERO ============ -->
+  <!-- ============ 1. HERO ============ -->
   <section class="hero" id="top">
     <div class="wrap hero__grid">
 
       <div class="hero__copy">
-        <p class="hero__scope">Built only for HVAC companies</p>
-        <h1 class="hero__title">Don't pay for clicks your website <span class="hl">can't close.</span></h1>
-        <p class="lede">When someone searches "AC repair near me" and clicks your ad, you pay for it. If your website makes them wait, hunt for your number, or fill out a long form, they leave and call someone else. We build one simple page that makes calling you the easiest thing to do.</p>
+        <p class="hero__scope">Built only for HVAC businesses</p>
+        <h1 class="hero__title">More customer calls start with <span class="hl">a better page.</span></h1>
+        <p class="lede">When someone needs AC or heating repair, they want help fast. They shouldn't have to dig through your website to find your number or request service.</p>
+        <p class="lede lede--2">We build simple, fast HVAC landing pages that make it easier for customers to reach you, without rebuilding your entire website.</p>
 
         <div class="actions">
-          <a class="btn btn--lg" href="#audit-hero">Get my free website check</a>
+          <a class="btn btn--lg" href="#audit-hero">Get My Free Website Check</a>
         </div>
+        <p class="hero__note">$300 flat. One focused page. No long-term commitment.</p>
 
-        <div class="hero-stats">
-          <div>
-            <strong>HVAC only</strong>
-            <span>We build for nobody else</span>
-          </div>
-          <div>
-            <strong>$300 flat</strong>
-            <span>Pay once, no surprises</span>
-          </div>
-          <div>
-            <strong>No contracts</strong>
-            <span>Cancel monthly care any time</span>
-          </div>
-        </div>
+        <ul class="hero-points">
+          <li>Built specifically for HVAC businesses</li>
+          <li>Works with your existing website</li>
+          <li>Designed for mobile calls and service requests</li>
+        </ul>
       </div>
 
       <div class="hero__panel" id="audit-hero">
@@ -69,10 +62,10 @@
           <input type="hidden" name="form-name" value="website-check">
           <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <p class="panel__title">Free website check</p>
-          <p class="panel__sub">Send us your website. We'll tell you, in plain English, what's costing you calls.</p>
+          <p class="panel__sub">Tell us your website and the service you'd like to focus on. We'll reply within 48 hours.</p>
 
           <label class="panel__field">
-            <span>Website address</span>
+            <span>Website URL</span>
             <input type="url" name="url" placeholder="https://yourhvac.com" required>
           </label>
           <label class="panel__field">
@@ -80,243 +73,235 @@
             <input type="text" name="contact" placeholder="Phone or email" required>
           </label>
           <label class="panel__field">
+            <span>Service to focus on</span>
+            <select name="service">
+              <option value="AC repair">AC repair</option>
+              <option value="Heating repair">Heating repair</option>
+              <option value="HVAC installation">HVAC installation</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </label>
+          <label class="panel__field">
             <span>Main service area</span>
             <input type="text" name="area" placeholder="City or region">
           </label>
 
-          <button class="btn btn--block btn--lg" type="submit">Send my website for review</button>
+          <button class="btn btn--block btn--lg" type="submit">Send My Website for Review</button>
           <p class="panel__done" role="status" aria-live="polite"></p>
-
-          <ol class="panel__steps" aria-label="What happens next">
-            <li><b>Send</b> your website</li>
-            <li><b>We check</b> what costs you calls</li>
-            <li><b>You get</b> a simple fix list</li>
-          </ol>
+          <p class="panel__fine">No obligation. No generic 30-page audit.</p>
         </form>
       </div>
 
     </div>
   </section>
 
-  <!-- Trust bar -->
-  <div class="trust-bar">
-    <div class="trust-bar__in">
-      <span>Built only for HVAC</span>
-      <span>$300 flat</span>
-      <span>No long contracts</span>
-      <span>Free check, no pressure</span>
-    </div>
-  </div>
-
-  <!-- Sticky call bar, mobile only -->
+  <!-- Sticky bar, mobile only -->
   <div class="mbar">
-    <a class="btn" href="#audit-hero">Free check</a>
+    <a class="btn" href="#audit-hero">Get My Free Website Check</a>
   </div>
 
-  <!-- ============ PROBLEM ============ -->
+  <!-- ============ 2. THE PROBLEM ============ -->
   <section class="block" id="problem">
     <div class="wrap split">
       <div>
-        <h2 class="h2">Ads are expensive. Losing the call after you paid for the click is worse.</h2>
-        <p class="body">You paid for the click and got nothing. The ad did its job. The page didn't.</p>
-        <p class="pull">Fix the page first. Then every click has a real chance to turn into a job.</p>
+        <p class="eyebrow">The problem</p>
+        <h2 class="h2">Getting someone to your website is only half the job.</h2>
+        <p class="body">Think about what happens when a homeowner's AC stops working.</p>
+        <p class="body">They search for a repair company, find your business, and open your website.</p>
       </div>
-      <ol class="journey">
-        <li><span>A homeowner's AC quits. They search on their phone.</span></li>
-        <li><span>They tap your ad. You pay for that click.</span></li>
-        <li><span>Your page is slow, or the phone number is hard to find.</span></li>
-        <li><span>They go back and call the next company.</span></li>
-      </ol>
+      <div>
+        <p class="needs__intro">Now they need three things:</p>
+        <ol class="needs">
+          <li>To know you handle their problem.</li>
+          <li>To know you serve their area.</li>
+          <li>A quick way to call or request service.</li>
+        </ol>
+        <p class="body">If they can't find those answers quickly, they may move on to another contractor.</p>
+        <p class="body">And if you're paying for Google Ads, you've already spent money getting that visitor to your site.</p>
+        <div class="problem__close">
+          <h3>Your website shouldn't make customers work to contact you.</h3>
+          <p>That's the part DuctLine helps fix.</p>
+          <a class="btn btn--lg" href="#audit">See What I'd Improve</a>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ============ WHAT YOU GET (tabs) ============ -->
-  <section class="block block--tint" id="fixes">
+  <!-- ============ 3. THE SOLUTION (tabs) ============ -->
+  <section class="block block--tint" id="included">
     <div class="wrap">
-      <h2 class="h2 h2--wide">What we fix, so people actually call you.</h2>
+      <p class="eyebrow">The DuctLine approach</p>
+      <h2 class="h2 h2--wide">One page. One job. Make contacting you easy.</h2>
+      <p class="body">We're not here to sell you an expensive website with features you'll never use. We build focused HVAC service pages designed around what homeowners need when they're ready to reach out.</p>
 
       <div class="tabs" data-tabs>
-        <div class="tabs__list" role="tablist" aria-label="What you get">
+        <div class="tabs__list" role="tablist" aria-label="What's included">
           <button class="tab is-active" role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" type="button">
-            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></span>
-            <span>Landing page design</span>
+            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></svg></span>
+            <span>Clear service messaging</span>
           </button>
           <button class="tab" role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" tabindex="-1" type="button">
-            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17a8 8 0 1 1 16 0"/><path d="M12 17l4-5"/></svg></span>
-            <span>Fast on phones</span>
+            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+            <span>One-tap calling</span>
           </button>
           <button class="tab" role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" tabindex="-1" type="button">
-            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20v-6M10 20V8M16 20v-9M22 20H2"/></svg></span>
-            <span>Call and form tracking</span>
+            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+            <span>Simple service requests</span>
           </button>
           <button class="tab" role="tab" id="tab-4" aria-selected="false" aria-controls="panel-4" tabindex="-1" type="button">
-            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11a7 7 0 0 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
-            <span>Local search basics</span>
+            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span>
+            <span>Fast, mobile-friendly pages</span>
           </button>
           <button class="tab" role="tab" id="tab-5" aria-selected="false" aria-controls="panel-5" tabindex="-1" type="button">
-            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg></span>
-            <span>Seasonal updates</span>
+            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span>
+            <span>Your reputation upfront</span>
           </button>
           <button class="tab" role="tab" id="tab-6" aria-selected="false" aria-controls="panel-6" tabindex="-1" type="button">
-            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 5-5"/></svg></span>
-            <span>Monthly care</span>
+            <span class="tab__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20v-6M10 20V8M16 20v-9M22 20H2"/></svg></span>
+            <span>Know where inquiries come from</span>
           </button>
         </div>
 
         <div class="tabs__panels">
 
-          <!-- 1 -->
           <div class="tabpanel" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
             <div class="tabpanel__head">
-              <h3>Landing page design</h3>
-              <p>One simple page, built only for HVAC, that makes it easy for a homeowner to call you or ask for a visit.</p>
+              <h3>Clear service messaging</h3>
+              <p>Someone searching for AC repair should immediately know you offer AC repair, not have to scroll through everything your company does.</p>
             </div>
             <div class="stage">
               <ul class="tick">
-                <li>Your phone number is easy to find, one tap to call</li>
-                <li>A short form: name, phone, and what's wrong</li>
-                <li>The page matches what they searched</li>
-                <li>Real reviews and your license. Only what's true.</li>
+                <li>The headline matches the service they need</li>
+                <li>Your service area is clear near the top</li>
+                <li>One service per page, not everything you do</li>
+              </ul>
+              <div class="viz viz--headline" aria-hidden="true">
+                <div class="hl-card">
+                  <p class="hl-card__tag">AC repair in your area</p>
+                  <p class="hl-card__h">AC not cooling? We can help.</p>
+                  <p class="hl-card__p">Serving your city and nearby towns.</p>
+                  <span class="mk-btn">Request service</span>
+                </div>
+                <p class="viz__note">Example headline</p>
+              </div>
+              <a class="btn stage__cta" href="#audit">Get My Free Website Check</a>
+            </div>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+            <div class="tabpanel__head">
+              <h3>One-tap calling</h3>
+              <p>Your phone number stays easy to find, especially on mobile, so customers can call without hunting for it.</p>
+            </div>
+            <div class="stage">
+              <ul class="tick">
+                <li>Your number at the top of the page</li>
+                <li>One tap to call from any phone</li>
+                <li>Still easy to reach while they scroll</li>
               </ul>
               <div class="viz viz--page" aria-hidden="true">
                 <div class="mk-phone">
                   <div class="mk-bar"><i></i><i></i><i></i></div>
                   <div class="mk-h"></div><div class="mk-h mk-h--s"></div>
                   <div class="mk-btn">Tap to call</div>
-                  <div class="mk-field"></div><div class="mk-field"></div><div class="mk-field"></div>
+                  <div class="mk-field"></div><div class="mk-field"></div>
                   <div class="mk-btn mk-btn--alt">Request service</div>
                 </div>
                 <p class="viz__note">Illustrative layout</p>
               </div>
-              <a class="btn pill stage__cta" href="#audit">Get my free website check</a>
+              <a class="btn stage__cta" href="#audit">Get My Free Website Check</a>
             </div>
           </div>
 
-          <!-- 2 -->
-          <div class="tabpanel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+          <div class="tabpanel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
             <div class="tabpanel__head">
-              <h3>Fast on phones</h3>
-              <p>Someone with a broken AC won't wait for a slow page. We build it light so it's ready when they look.</p>
+              <h3>Simple service requests</h3>
+              <p>No long forms. Just the details your team needs to follow up.</p>
             </div>
             <div class="stage">
               <ul class="tick">
-                <li>Loads quickly on a phone</li>
-                <li>Big text and big buttons for a thumb</li>
-                <li>Tested on real phones before launch</li>
+                <li>Only the fields your team actually uses</li>
+                <li>Quick to finish with a thumb</li>
+                <li>Requests go where you can see them</li>
+              </ul>
+              <div class="viz viz--form" aria-hidden="true">
+                <div class="mini-form">
+                  <p class="viz__title">Request service</p>
+                  <span class="mini-form__f">Name</span>
+                  <span class="mini-form__f">Phone</span>
+                  <span class="mini-form__f">What's wrong?</span>
+                  <span class="mk-btn">Send request</span>
+                </div>
+                <p class="viz__note">Example form</p>
+              </div>
+              <a class="btn stage__cta" href="#audit">Get My Free Website Check</a>
+            </div>
+          </div>
+
+          <div class="tabpanel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden>
+            <div class="tabpanel__head">
+              <h3>Fast, mobile-friendly pages</h3>
+              <p>Designed for people searching on their phones, with straightforward layouts and no unnecessary clutter.</p>
+            </div>
+            <div class="stage">
+              <ul class="tick">
+                <li>Built for phones first</li>
+                <li>Big text and big buttons</li>
                 <li>Nothing extra that slows the page down</li>
               </ul>
               <div class="viz viz--speed" aria-hidden="true">
-                <p class="bar-label">A slow page</p>
-                <div class="bar bar--slow"><span>Visitor leaves</span></div>
-                <p class="bar-label">Your new page</p>
-                <div class="bar bar--fast"><span>Visitor stays</span></div>
+                <p class="bar-label">A cluttered page</p>
+                <div class="bar bar--slow"><span>Slow to load</span></div>
+                <p class="bar-label">A focused page</p>
+                <div class="bar bar--fast"><span>Ready fast</span></div>
                 <p class="viz__note">Illustrative, not a measurement</p>
               </div>
-              <a class="btn pill stage__cta" href="#audit">Get my free website check</a>
+              <a class="btn stage__cta" href="#audit">Get My Free Website Check</a>
             </div>
           </div>
 
-          <!-- 3 -->
-          <div class="tabpanel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
-            <div class="tabpanel__head">
-              <h3>Call and form tracking</h3>
-              <p>You see which ads and searches bring in jobs, so you stop guessing where the money goes.</p>
-            </div>
-            <div class="stage">
-              <ul class="tick">
-                <li>Every phone call from the page is counted</li>
-                <li>Every form request is counted</li>
-                <li>You can see where each one came from</li>
-                <li>Set up and tested before launch</li>
-              </ul>
-              <div class="viz viz--track" aria-hidden="true">
-                <p class="viz__title">Where your calls come from</p>
-                <div class="row"><b></b><span>Google ad</span><em>Phone call</em></div>
-                <div class="row"><b></b><span>Google search</span><em>Form request</em></div>
-                <div class="row"><b></b><span>Referral link</span><em>Phone call</em></div>
-                <p class="viz__note">Example layout</p>
-              </div>
-              <a class="btn pill stage__cta" href="#audit">Get my free website check</a>
-            </div>
-          </div>
-
-          <!-- 4 -->
-          <div class="tabpanel" role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden>
-            <div class="tabpanel__head">
-              <h3>Local search basics</h3>
-              <p>So homeowners in your area can find you and see right away that you serve them.</p>
-            </div>
-            <div class="stage">
-              <ul class="tick">
-                <li>Page titles with your city and service</li>
-                <li>Your service area spelled out clearly</li>
-                <li>A clean page structure Google can read</li>
-                <li>Included in the $300 page</li>
-              </ul>
-              <div class="viz viz--seo" aria-hidden="true">
-                <div class="serp">
-                  <p class="serp__url">yourhvac.com</p>
-                  <p class="serp__title">AC Repair in Your City | Your HVAC Company</p>
-                  <p class="serp__desc">Fast AC and heating repair for homeowners in your area. Request service online.</p>
-                </div>
-                <p class="viz__note">Example search result</p>
-              </div>
-              <a class="btn pill stage__cta" href="#audit">Get my free website check</a>
-            </div>
-          </div>
-
-          <!-- 5 -->
           <div class="tabpanel" role="tabpanel" id="panel-5" aria-labelledby="tab-5" hidden>
             <div class="tabpanel__head">
-              <h3>Seasonal updates</h3>
-              <p>Summer needs AC. Winter needs heat. Your page changes with the season so it always talks about what people need.</p>
+              <h3>Your reputation upfront</h3>
+              <p>Show real customer reviews, experience, service areas, and license information where applicable.</p>
             </div>
             <div class="stage">
               <ul class="tick">
-                <li>Summer: AC repair comes first</li>
-                <li>Spring and fall: tune-ups and maintenance</li>
-                <li>Winter: furnace repair comes first</li>
-                <li>Included in monthly care</li>
+                <li>Real reviews you provide</li>
+                <li>Your experience and service areas</li>
+                <li>License information where applicable</li>
               </ul>
-              <div class="viz viz--season" data-season aria-hidden="false">
-                <div class="chips" role="group" aria-label="Preview a season">
-                  <button type="button" class="chip is-on" data-s="summer">Summer</button>
-                  <button type="button" class="chip" data-s="shoulder">Spring / Fall</button>
-                  <button type="button" class="chip" data-s="winter">Winter</button>
+              <div class="viz viz--review" aria-hidden="true">
+                <div class="review">
+                  <p class="review__stars">★★★★★</p>
+                  <p class="review__q">Your real customer review goes here.</p>
+                  <p class="review__who">Customer name, city</p>
                 </div>
-                <div class="season-card">
-                  <p class="season-card__h" data-season-h>AC not cooling? We'll get it fixed.</p>
-                  <p class="season-card__p" data-season-p>Fast AC repair for homeowners in your area.</p>
-                  <span class="mk-btn">Request service</span>
-                </div>
-                <p class="viz__note">Example headlines</p>
+                <p class="viz__note">Placeholder layout. We only use reviews you provide.</p>
               </div>
-              <a class="btn pill stage__cta" href="#audit">Get my free website check</a>
+              <a class="btn stage__cta" href="#audit">Get My Free Website Check</a>
             </div>
           </div>
 
-          <!-- 6 -->
           <div class="tabpanel" role="tabpanel" id="panel-6" aria-labelledby="tab-6" hidden>
             <div class="tabpanel__head">
-              <h3>Monthly care</h3>
-              <p>Optional. We look after the page so you don't have to, and you can cancel any time.</p>
+              <h3>Know where inquiries come from</h3>
+              <p>Track form submissions and call-button clicks. Where supported, dedicated call tracking can provide better visibility into actual calls.</p>
             </div>
             <div class="stage">
               <ul class="tick">
-                <li>Updates when your services or hours change</li>
-                <li>Seasonal changes, done for you</li>
-                <li>Checks that your form and phone button still work</li>
-                <li>Keeps the page fast</li>
+                <li>Form submissions tracked</li>
+                <li>Call-button clicks tracked</li>
+                <li>Dedicated call tracking where supported</li>
               </ul>
-              <div class="viz viz--care" aria-hidden="true">
-                <p class="viz__title">Monthly check</p>
-                <div class="ok"><b></b>Form works</div>
-                <div class="ok"><b></b>Phone button works</div>
-                <div class="ok"><b></b>Page is fast</div>
-                <div class="ok"><b></b>Season updated</div>
-                <p class="viz__note">Example checklist</p>
+              <div class="viz viz--track" aria-hidden="true">
+                <p class="viz__title">Recent inquiries</p>
+                <div class="row"><b></b><span>Google ad</span><em>Call-button click</em></div>
+                <div class="row"><b></b><span>Google search</span><em>Form submission</em></div>
+                <div class="row"><b></b><span>Referral link</span><em>Form submission</em></div>
+                <p class="viz__note">Example layout</p>
               </div>
-              <a class="btn pill stage__cta" href="#pricing">See pricing</a>
+              <a class="btn stage__cta" href="#audit">Get My Free Website Check</a>
             </div>
           </div>
 
@@ -325,143 +310,233 @@
     </div>
   </section>
 
-  <!-- ============ MID CTA ============ -->
-  <section class="block block--orange">
-    <div class="wrap cta-banner">
-      <h2 class="h2">Fix the page first. Then pay for clicks.</h2>
-      <p class="body">Send us your website and we'll show you what's costing you calls. It's free, and there's no pressure.</p>
-      <div class="actions">
-        <a class="btn btn--white btn--lg" href="#audit">Get my free website check</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ SEASONS ============ -->
-  <section class="block block--dark" id="seasons">
+  <!-- ============ 4. WHY A FOCUSED PAGE ============ -->
+  <section class="block block--dark" id="focused">
     <div class="wrap">
-      <h2 class="h2 h2--light">Summer needs AC. Winter needs heat. Your page should know the difference.</h2>
-      <p class="body body--light body--narrow">A page that talks about AC in January misses the people whose furnace just quit. We change what your page says as the seasons change.</p>
-
-      <div class="season" role="img" aria-label="Illustrative chart of cooling and heating demand across twelve months">
-        <div class="season__months">
-          <div class="m" style="--cool:12%;--heat:88%"><b></b><i></i><span>Jan</span></div>
-          <div class="m" style="--cool:8%;--heat:74%"><b></b><i></i><span>Feb</span></div>
-          <div class="m" style="--cool:10%;--heat:46%"><b></b><i></i><span>Mar</span></div>
-          <div class="m" style="--cool:22%;--heat:18%"><b></b><i></i><span>Apr</span></div>
-          <div class="m" style="--cool:48%;--heat:6%"><b></b><i></i><span>May</span></div>
-          <div class="m" style="--cool:78%;--heat:4%"><b></b><i></i><span>Jun</span></div>
-          <div class="m" style="--cool:96%;--heat:3%"><b></b><i></i><span>Jul</span></div>
-          <div class="m" style="--cool:90%;--heat:3%"><b></b><i></i><span>Aug</span></div>
-          <div class="m" style="--cool:58%;--heat:6%"><b></b><i></i><span>Sep</span></div>
-          <div class="m" style="--cool:24%;--heat:20%"><b></b><i></i><span>Oct</span></div>
-          <div class="m" style="--cool:8%;--heat:52%"><b></b><i></i><span>Nov</span></div>
-          <div class="m" style="--cool:6%;--heat:80%"><b></b><i></i><span>Dec</span></div>
-        </div>
-        <p class="season__key"><span class="k k--cool"></span>Cooling <span class="k k--heat"></span>Heating</p>
+      <p class="eyebrow eyebrow--light">Built for how HVAC customers search</p>
+      <h2 class="h2 h2--light">Your AC repair customers shouldn't land on a page about everything.</h2>
+      <div class="focused__intro">
+        <p>Imagine two homeowners. One needs emergency AC repair. The other wants an estimate for a new heating system.</p>
+        <p>They're looking for different things. But many HVAC websites send both to the same general homepage.</p>
+        <p>A focused landing page lets you match the message to the service someone actually needs.</p>
       </div>
-      <p class="mock-note mock-note--dark">Illustrative pattern. Your own busy seasons depend on where you work.</p>
 
-      <div class="season-plan">
-        <div>
-          <h3>Summer</h3>
-          <p>AC repair comes first, with your phone number right at the top.</p>
+      <div class="pages">
+        <article class="pg">
+          <h3>AC Repair Page</h3>
+          <p>A clear headline, service area, trust signals, and an easy way to request urgent help.</p>
+        </article>
+        <article class="pg">
+          <h3>Heating Repair Page</h3>
+          <p>Messaging focused on heating problems, cold-weather service, and getting in touch.</p>
+        </article>
+        <article class="pg">
+          <h3>HVAC Installation Page</h3>
+          <p>A page built around replacement estimates, equipment options, and financing information where available.</p>
+        </article>
+      </div>
+
+      <p class="focused__close">You don't need all three to start. <b>We begin with the one service you want to focus on most.</b></p>
+    </div>
+  </section>
+
+  <!-- ============ 5. WHY DUCTLINE ============ -->
+  <section class="block" id="why">
+    <div class="wrap why">
+      <div>
+        <p class="eyebrow">A simpler way to improve your website</p>
+        <h2 class="h2">You don't need another complicated project.</h2>
+        <p class="body">Most HVAC owners have more important things to do than sit through website meetings, review endless designs, or learn another piece of software.</p>
+        <p class="body">We've kept our service simple on purpose.</p>
+      </div>
+      <div>
+        <div class="why__list">
+          <p><b>One clear price.</b> You know what the page costs before we start.</p>
+          <p><b>Keep what already works.</b> Already have a website, CRM, or booking system? We can work alongside your existing setup wherever technically supported.</p>
+          <p><b>See the design before launch.</b> You review your page before it goes live.</p>
+          <p><b>You stay in control.</b> We'll agree on a setup that makes sense for your business, including how future content updates will be handled.</p>
+          <p><b>Help when you need it.</b> Need seasonal changes or someone to check that everything is working? Our optional monthly care is there for that.</p>
         </div>
-        <div>
-          <h3>Spring and fall</h3>
-          <p>Tune-ups and maintenance come first, with an easy way to book a visit.</p>
-        </div>
-        <div>
-          <h3>Winter</h3>
-          <p>Furnace repair comes first, so a cold house gets to you fast.</p>
-        </div>
+        <p class="why__close">No unnecessary rebuilds. No confusing packages. Just a page designed to help customers reach your business.</p>
       </div>
     </div>
   </section>
 
-  <!-- ============ PRICING ============ -->
+  <!-- ============ 6. PRICING ============ -->
   <section class="block block--tint" id="pricing">
     <div class="wrap">
-      <h2 class="h2">Two options. Straight prices. No surprises.</h2>
+      <p class="eyebrow">Simple pricing</p>
+      <h2 class="h2">One page. $300. No surprises.</h2>
 
       <div class="plans">
         <article class="plan plan--main">
-          <p class="plan__name">Landing page</p>
+          <p class="plan__name">HVAC Call-Ready Landing Page</p>
           <p class="plan__price">$300 <span>flat</span></p>
-          <p class="plan__lead">One page built for HVAC. You pay once.</p>
+          <p class="plan__lead">One-time payment. No required monthly care plan.</p>
+          <p class="plan__sub">Everything you need for one focused HVAC service page:</p>
           <ul class="plan__list">
-            <li>Page design and writing</li>
-            <li>Works great on phones</li>
-            <li>Tap-to-call button</li>
-            <li>Short quote request form</li>
-            <li>Call and form tracking</li>
-            <li>Testing and launch</li>
-            <li>Help after launch</li>
+            <li>Custom page design and copy</li>
+            <li>Mobile-friendly, fast-loading layout</li>
+            <li>Prominent tap-to-call buttons</li>
+            <li>Short service request form</li>
+            <li>Clear service-area messaging</li>
+            <li>Real reviews and trust signals you provide</li>
+            <li>Basic on-page SEO setup</li>
+            <li>Form submission and call-button click tracking</li>
+            <li>One round of design revisions</li>
+            <li>Testing and launch assistance</li>
+            <li>Post-launch fixes for issues within the agreed scope</li>
           </ul>
-          <a class="btn btn--lg btn--block" href="#audit">Get my free website check</a>
+          <a class="btn btn--lg btn--block" href="#audit">Get My Free Website Check</a>
+          <p class="plan__fine">Domain, hosting, premium software, advanced integrations, and optional call-tracking services are quoted separately if needed.</p>
         </article>
 
         <article class="plan">
-          <p class="plan__name">Monthly care <em>(optional)</em></p>
-          <p class="plan__price">$70 <span>a month</span></p>
-          <p class="plan__lead">We look after the page so you don't have to.</p>
+          <p class="plan__name">Optional Monthly Care</p>
+          <p class="plan__price">$70 <span>/month</span></p>
+          <p class="plan__lead">You take care of your customers. We'll take care of the page.</p>
           <ul class="plan__list">
-            <li>Updates when your services or hours change</li>
-            <li>Seasonal changes (AC in summer, heat in winter)</li>
-            <li>Checks that your form and phone button still work</li>
-            <li>Keeps the page fast</li>
+            <li>Update services, business hours, and page information</li>
+            <li>Refresh seasonal messaging</li>
+            <li>Check forms and call buttons</li>
+            <li>Monitor basic page functionality and performance</li>
+            <li>Handle routine content changes within the agreed care scope</li>
           </ul>
-          <p class="plan__note">No long contract. Cancel any time.</p>
-          <p class="plan__note"><b>Not included:</b> running your Google Ads, writing a full website, or ongoing SEO.</p>
+          <p class="plan__note plan__note--strong">No long-term contract. Cancel anytime.</p>
+          <p class="plan__note"><b>Not included:</b> Google Ads management, a complete multi-page website, ongoing SEO campaigns, or unlimited development requests.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ PROCESS ============ -->
+  <!-- ============ 7. HOW IT WORKS ============ -->
   <section class="block block--dark" id="process">
     <div class="wrap">
-      <h2 class="h2 h2--light">How it works. About 30 minutes of your time.</h2>
+      <p class="eyebrow eyebrow--light">Four simple steps</p>
+      <h2 class="h2 h2--light">We handle the website work. You handle your business.</h2>
       <ol class="steps">
-        <li><span>1</span><h3>Send your website</h3><p>Takes a minute.</p></li>
-        <li><span>2</span><h3>We tell you what's costing you calls</h3><p>Free, in plain English, within 48 hours.</p></li>
-        <li><span>3</span><h3>We build your page</h3><p>You see it before it goes live.</p></li>
-        <li><span>4</span><h3>We launch it and make sure it works</h3><p>Forms, phone button, and tracking all tested.</p></li>
+        <li>
+          <span>01</span><h3>Send us your website</h3>
+          <p>Tell us your website address and the service you'd like to focus on.</p>
+          <p>Takes about a minute.</p>
+        </li>
+        <li>
+          <span>02</span><h3>Get a free website check</h3>
+          <p>We'll review how easy it is for potential customers to understand your services and get in touch.</p>
+          <p>Within 48 hours, we'll send you a short breakdown of what we noticed and what we'd recommend. No complicated reports. No obligation.</p>
+        </li>
+        <li>
+          <span>03</span><h3>We build your page</h3>
+          <p>If you decide to move forward, we handle the design, copy, and development.</p>
+          <p>You get to review the page and request an agreed round of changes before launch.</p>
+        </li>
+        <li>
+          <span>04</span><h3>We launch and test it</h3>
+          <p>We check the mobile layout, buttons, forms, and agreed tracking before the page goes live.</p>
+          <p>For a standard-scope project, our target is to have your page ready for launch within seven business days after receiving everything needed to build it.</p>
+        </li>
       </ol>
+      <div class="process__foot">
+        <p><b>Your involvement:</b> A short intake, access or assets where needed, and one design approval.</p>
+        <a class="btn btn--lg" href="#audit">Get My Free Website Check</a>
+      </div>
     </div>
   </section>
 
-  <!-- ============ FAQ ============ -->
+  <!-- ============ 8. THE FREE OFFER ============ -->
+  <section class="block block--orange" id="check">
+    <div class="wrap offer">
+      <div>
+        <p class="eyebrow eyebrow--white">Start here. It's free.</p>
+        <h2 class="h2 h2--white">Before you spend $300, find out what your website could do better.</h2>
+        <p class="offer__p">Not sure whether you even need a new landing page? That's exactly why we offer a free website check.</p>
+        <p class="offer__p">Send us your website and we'll look at:</p>
+        <ul class="offer__list">
+          <li>How easy it is to call you from a phone</li>
+          <li>Whether customers can quickly find the service they need</li>
+          <li>How clear your service area and contact options are</li>
+          <li>Whether your forms are asking for too much</li>
+          <li>Opportunities to make your experience and reputation more visible</li>
+        </ul>
+      </div>
+      <div class="offer__card">
+        <h3>What you'll get</h3>
+        <p>A short, personalized breakdown of what we'd improve, why it matters, and whether a focused landing page makes sense for your business.</p>
+        <p class="offer__strong">No generic 30-page audit. No obligation to buy anything.</p>
+        <a class="btn btn--lg btn--block" href="#audit">Check My Website for Free</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 9. FAQ ============ -->
   <section class="block" id="faq">
     <div class="wrap split split--faq">
       <h2 class="h2">Questions</h2>
       <div class="faq">
-        <details><summary>Why only $300?</summary><p>We only build HVAC pages, so we don't spend weeks on meetings and presentations. We build the page that matters and keep the price fair.</p></details>
-        <details><summary>Do I have to run ads?</summary><p>No. A good page also helps people who find you on Google, from a referral, or from a truck sticker. If you run ads later, the page is ready.</p></details>
-        <details><summary>What if I'm not running ads yet?</summary><p>Start with the page. We won't tell you to spend money on ads until your page can turn visitors into calls.</p></details>
-        <details><summary>Can you promise more jobs?</summary><p>No one honestly can. What we promise is a page that makes it as easy as possible to call you, and tracking so you see the results yourself.</p></details>
-        <details><summary>Do I need the monthly plan?</summary><p>No. It's optional. Some contractors like having us handle updates so they can focus on jobs.</p></details>
+        <details><summary>Why is it only $300?</summary>
+          <p>Because we keep the scope focused.</p>
+          <p>We specialize in one-page HVAC landing pages rather than large custom websites with weeks of planning and unnecessary features. That helps us keep the process efficient and the price straightforward.</p>
+        </details>
+        <details><summary>Do I need to replace my existing website?</summary>
+          <p>No.</p>
+          <p>A landing page can work alongside your current site. You don't necessarily need to move away from Squarespace, WordPress, Webflow, or your existing booking software. We'll recommend the simplest suitable setup.</p>
+        </details>
+        <details><summary>What if I already use Jobber or another booking tool?</summary>
+          <p>That's fine.</p>
+          <p>We can link to your existing booking process or connect supported forms and workflows where practical. More advanced integrations may require a separate quote.</p>
+        </details>
+        <details><summary>Do I need to be running Google Ads?</summary>
+          <p>No.</p>
+          <p>Your landing page can also be used in social media profiles, referral campaigns, emails, or other places customers discover your business. If you're running ads, we can make the page relevant to the service you're promoting.</p>
+        </details>
+        <details><summary>Can I edit the page myself?</summary>
+          <p>That depends on where we build it.</p>
+          <p>We can discuss an easy-to-manage setup before starting, so you know exactly what you'll be able to update yourself. Or you can let us handle routine updates through monthly care.</p>
+        </details>
+        <details><summary>Can you guarantee more calls or jobs?</summary>
+          <p>No honest web developer can guarantee that.</p>
+          <p>The results depend on how many people visit your page, what services you offer, your market, and how inquiries are handled.</p>
+          <p>What we can do is make the page easy to navigate, make contacting you straightforward, and set up the agreed tracking so you have better visibility into customer inquiries.</p>
+        </details>
+        <details><summary>How quickly can the page go live?</summary>
+          <p>For a standard page, we aim for seven business days once we've received the required information, assets, and access.</p>
+          <p>More complex requirements may take longer, and we'll agree on that before starting.</p>
+        </details>
+        <details><summary>Do I need the $70 monthly plan?</summary>
+          <p>No.</p>
+          <p>The landing page is a one-time project. Monthly care is completely optional.</p>
+        </details>
+        <details><summary>What happens if something doesn't work after launch?</summary>
+          <p>We'll correct defects in the agreed implementation that are identified during the included post-launch support period, at no additional charge.</p>
+          <p>We'll explain the support period and scope before work begins.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <!-- ============ CLOSE ============ -->
+  <!-- ============ 10. FINAL CTA ============ -->
   <section class="block block--dark close" id="audit">
     <div class="wrap close__grid">
       <div>
-        <h2 class="close__title">You're already paying for people to find you. Make sure they can call you.</h2>
-        <p class="body body--light">Send us your website and we'll show you what's costing you calls. Free. No pressure.</p>
+        <p class="eyebrow eyebrow--light">Your next customer should have an easy way to reach you</p>
+        <h2 class="close__title">Make it easy for customers to choose you.</h2>
+        <p class="body body--light">You work hard to build your reputation, keep customers happy, and get your business noticed. Your website should make the next step simple.</p>
+        <p class="body body--light">Let us take a look at your current site and show you where a few focused improvements could help.</p>
+        <p class="receive"><b>Get your free website check.</b> No pressure. No complicated process. Just practical feedback from people who build for HVAC businesses.</p>
       </div>
 
       <form class="audit" name="audit-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-audit-form>
         <input type="hidden" name="form-name" value="audit-request">
         <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
-        <label>Name <input name="name" type="text" autocomplete="name" required></label>
+        <p class="audit__title">Get My Free Website Check</p>
+        <label>Your name <input name="name" type="text" autocomplete="name" required></label>
         <label>HVAC company name <input name="company" type="text" autocomplete="organization" required></label>
-        <label>Website address <input name="url" type="url" placeholder="https://" required></label>
-        <label>Email <input name="email" type="email" autocomplete="email" required></label>
+        <label>Website URL <input name="url" type="url" placeholder="https://" required></label>
+        <label>Email address <input name="email" type="email" autocomplete="email" required></label>
         <label>Main service area <input name="area" type="text" placeholder="City or region" required></label>
-        <button class="btn btn--lg btn--block" type="submit">Get my free website check</button>
+        <button class="btn btn--lg btn--block" type="submit">Send My Website for Review</button>
         <p class="audit__done" role="status" aria-live="polite"></p>
+        <p class="audit__note">We'll review your website and aim to reply within 48 hours.</p>
       </form>
     </div>
   </section>
@@ -470,8 +545,14 @@
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <a class="logo logo--foot" href="#top" aria-label="DuctLine, back to top"><img src="assets/logo-light.png" alt="DuctLine" width="1163" height="250"></a>
-    <p>Landing pages for HVAC companies in the United States.</p>
+    <div class="foot__brand">
+      <a class="logo logo--foot" href="#top" aria-label="DuctLine, back to top"><img src="assets/logo-light.png" alt="DuctLine" width="1163" height="250"></a>
+      <p>Simple, conversion-focused landing pages for HVAC businesses across the United States.</p>
+    </div>
+    <div class="foot__side">
+      <p class="foot__price">$300 flat. Optional $70/month care.</p>
+      <p>Helping HVAC businesses make it easier for customers to call and request service.</p>
+    </div>
     <p class="foot__small">&copy; <span data-year>2026</span> DuctLine. All rights reserved.</p>
   </div>
 </footer>

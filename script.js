@@ -101,7 +101,7 @@
   }
 
   wireForm(document.querySelector('[data-hero-form]'), '.panel__done',
-    'Received. We will send your website check shortly.');
+    'Received. We will review your website and aim to reply within 48 hours.');
 
   wireForm(document.querySelector('[data-audit-form]'), '.audit__done', function (form) {
     var first = (form.elements.name.value || '').split(' ')[0] || 'there';
