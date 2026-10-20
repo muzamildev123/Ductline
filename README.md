@@ -1,31 +1,30 @@
-# DuctLine: HVAC landing page
+# DuctLine: landing page for HVAC companies
 
-A single-page landing page built with plain HTML, CSS, and JavaScript. No build step, no packages.
+A single-page site built with plain HTML, CSS and JavaScript. No build step, no packages.
 
 ## Files
 
-- `index.html`: the full sales page
+- `index.html`: the full page
+- `thanks.html`: thank-you page shown if a form is sent without JavaScript
+- `styles.css`: design, layout, responsive rules
+- `script.js`: tabs, season preview, scroll effects, form sending
 - `assets/`: logo (dark and light versions) and favicon
-- `styles.css`: palette, typography, layout, responsive rules, reduced-motion support
-- `script.js`: scroll reveal, before/after slider, demo forms, footer year
+- `netlify.toml`: Netlify settings (publish folder and headers)
 
 ## Run it locally
 
-Option A: Python (already installed on most computers)
-
 ```bash
-cd ductline-landing
 python3 -m http.server 5500
 ```
 
-Then open http://localhost:5500
+Then open http://localhost:5500. Forms only send once the site is on Netlify.
 
-Option B: VS Code "Live Server" extension. Right-click `index.html` and choose "Open with Live Server".
+## Hosting
 
-## Before going live
+The site is hosted on Netlify and deploys automatically on every push to `main`.
 
-- Replace the placeholder phone `+1 555 014 2290` in every `tel:` link and the comparison mockup
-- Replace `[Insert verified flat-rate price]` and `[Insert verified monthly price]` in the pricing section
-- Confirm the "Not included" list and the post-launch support period with your actual scope
-- Forms are demos. Connect them to your CRM or a form service before launch (the `submit` handlers in `script.js`)
-- The phone and comparison mockups are labelled illustrative. Add only verified reviews, licences, and metrics
+## Forms
+
+Both forms (`website-check` and `audit-request`) are collected by Netlify Forms.
+Read them in Netlify under the project's **Forms** page, and add your email under
+Forms, then Settings & usage, then Form notifications to get an alert for each one.
