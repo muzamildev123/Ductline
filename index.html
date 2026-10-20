@@ -65,7 +65,9 @@
       </div>
 
       <div class="hero__panel" id="audit-hero">
-        <form class="panel" data-hero-form>
+        <form class="panel" name="website-check" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-hero-form>
+          <input type="hidden" name="form-name" value="website-check">
+          <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
           <p class="panel__title">Free website check</p>
           <p class="panel__sub">Send us your website. We'll tell you, in plain English, what's costing you calls.</p>
 
@@ -450,7 +452,9 @@
         <p class="body body--light">Send us your website and we'll show you what's costing you calls. Free. No pressure.</p>
       </div>
 
-      <form class="audit" data-audit-form>
+      <form class="audit" name="audit-request" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field" data-audit-form>
+        <input type="hidden" name="form-name" value="audit-request">
+        <p class="hp" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
         <label>Name <input name="name" type="text" autocomplete="name" required></label>
         <label>HVAC company name <input name="company" type="text" autocomplete="organization" required></label>
         <label>Website address <input name="url" type="url" placeholder="https://" required></label>

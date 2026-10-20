@@ -1,4 +1,4 @@
-/* Ductline. Plain JavaScript, no dependencies. Forms are demos and send nothing yet. */
+/* DuctLine. Plain JavaScript, no dependencies. */
 (function () {
   'use strict';
 
@@ -73,24 +73,38 @@
     });
   }
 
-  // Hero demo form
-  var heroForm = document.querySelector('[data-hero-form]');
-  if (heroForm) {
-    heroForm.addEventListener('submit', function (e) {
+  // Forms: sent to Netlify Forms (shows in the Netlify dashboard under Forms).
+  // The plain POST in the markup is the fallback if JavaScript is off.
+  function wireForm(form, doneSel, okMsg) {
+    if (!form) return;
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      heroForm.querySelector('.panel__done').textContent = 'Received. We will send your audit shortly.';
-      heroForm.reset();
+      var done = form.querySelector(doneSel);
+      var btn = form.querySelector('button[type="submit"]');
+      var label = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
+      done.textContent = '';
+      var body = new URLSearchParams(new FormData(form)).toString();
+      fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body })
+        .then(function (res) {
+          if (!res.ok) throw new Error('bad status');
+          done.textContent = typeof okMsg === 'function' ? okMsg(form) : okMsg;
+          form.reset();
+        })
+        .catch(function () {
+          done.textContent = 'Sorry, that did not send. Please try again in a moment.';
+        })
+        .then(function () {
+          if (btn) { btn.disabled = false; btn.textContent = label; }
+        });
     });
   }
 
-  // Audit form
-  var audit = document.querySelector('[data-audit-form]');
-  if (audit) {
-    audit.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var first = (audit.elements.name.value || '').split(' ')[0] || 'there';
-      audit.querySelector('.audit__done').textContent = 'Thanks, ' + first + '. We will reply shortly.';
-      audit.reset();
-    });
-  }
+  wireForm(document.querySelector('[data-hero-form]'), '.panel__done',
+    'Received. We will send your website check shortly.');
+
+  wireForm(document.querySelector('[data-audit-form]'), '.audit__done', function (form) {
+    var first = (form.elements.name.value || '').split(' ')[0] || 'there';
+    return 'Thanks, ' + first + '. We will reply shortly.';
+  });
 })();

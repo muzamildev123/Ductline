@@ -422,6 +422,13 @@ input, select, button { font: inherit; }
 .viz--care .ok { display: flex; align-items: center; gap: 14px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 16px; }
 .viz--care .viz__note { justify-self: start; margin-top: 12px; }
 
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ---------- Thank-you page ---------- */
+.thanks { min-height: 100vh; display: grid; align-items: center; padding: 48px 0; }
+.thanks__in { display: grid; gap: 22px; justify-items: start; }
+.thanks .body { margin-top: 0; }
+
 /* ---------- Footer ---------- */
 .foot { background: var(--slate); color: #9BA6AF; padding: 36px 0 44px; border-top: 1px solid var(--line-dark); }
 .foot__in { display: flex; flex-wrap: wrap; gap: 10px 28px; align-items: center; justify-content: space-between; }
